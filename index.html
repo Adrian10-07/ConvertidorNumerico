@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traductor Texto ↔ Binario y Bases</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Convertidor Númerico</h1>
+    <div class="card">
+      <h2>Texto - Binario</h2>
+      <div class="translator">
+        <input id="inputText" type="text" placeholder="Ingresa texto o binario aquí">
+        <textarea id="outputText" readonly placeholder="Resultado aquí"></textarea>
+        <div class="button-group">
+          <button id="toBinaryButton">Convertir a Binario</button>
+          <button id="toTextButton">Convertir a Texto</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Conversiónes Disponibles</h2>
+      <div class="base-translator">
+        <div class="select-group">
+          <select id="baseFrom">
+            <option value="binary">Binario</option>
+            <option value="decimal">Decimal</option>
+            <option value="octal">Octal</option>
+            <option value="hexadecimal">Hexadecimal</option>
+          </select>
+          <select id="baseTo"></select>
+        </div>
+        <input id="baseInput" type="text" placeholder="Ingresa el número aquí">
+        <textarea id="baseOutput" readonly placeholder="Resultado aquí"></textarea>
+        <button id="convertBaseButton">Convertir</button>
+      </div>
+    </div>
+
+    <div id="notification-container"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
